@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML com Javascript</title>
+
+<style>
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: teal;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#div01{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+</style>
+
+<script>
+
+    /*Troca a cor de um parágrafo*/
+    function trocaCor() {
+        
+        //Salva a descrição da cor
+        var strCor = document.getElementById("txtCor").value;
+
+        //Valida se foi informada uma cor por JS
+        if (strCor == "") {
+            alert("Cor não pode ser vazia");
+            return false;
+        }
+
+        var pCor = document.getElementById("pCor");
+        pCor.style.color = strCor;
+    }
+
+    function trocaTexto(){
+        var strTextoNovo = document.getElementById("txtCor").value;
+        document.getElementById("pCor").innerHTML = strTextoNovo;
+    }
+
+</script>
+</head>
+<body>
+
+<h1>HTML com Javascript</h1>
+
+<p>Javascript pode ser utilizado para alterar o comportamento de elementos HTML.</p>
+
+    <div id="div01">
+    Cor: (Informe o nome da cor em inglês)<br>
+    <input type="text" id="txtCor">
+    <input type="button" onclick="trocaCor();" value="TROCA COR">
+    <input type="button" onclick="trocaTexto();" value="TROCA TEXTO"><br>
+    <p id="pCor">COR ALTERADA</p>
+    </div>
+
+    
+</body>
+</html>

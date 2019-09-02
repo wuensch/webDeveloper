@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML FORMS com action handler</title>
+</head>
+<body>
+    
+<h1>Exemplo de form com action handler</h1>
+
+<p><code>action handler</code>é o controlador, onde normalmente é uma página no servidor que processa a requisição.</p>
+
+<p>O <code>action handler</code> é especificado no atributo <code>action</code></p>
+
+<form action="processa_nome.php" method="POST">
+<fieldset>
+    <legend>Dados do usuário</legend>
+    Nome: <br>
+    <input type="text" name="nome"> <br>
+    Sobrenome: <br>
+    <input type="text" name="sobrenome"> <p></p>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</fieldset>
+
+</form>
+
+</body>
+</html>

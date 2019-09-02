@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+
+</head>
+<body>
+    
+<p id="p1"></p>
+<p id="p2">VOU SER ESCONDIDO</p>
+
+<button id="bt1">CLICK ME</button>
+
+<!--Esse script ao ser executado escreverá conteúdo no parágrafo definido acima-->
+<script>
+    document.getElementById("p1").innerHTML = "HELLO WORLD";
+    document.getElementById("p1").style.color = 'red';
+    //Adding and Deleting Elements
+    
+    //Hiding an element using CSS
+    document.getElementById("p2").style.display = 'none';
+
+    //Adding Events
+    document.getElementById("bt1").addEventListener("click",minhaFuncao);
+
+function minhaFuncao() {
+    alert("Clicou");
+}    
+
+</script>
+
+</body>
+</html>

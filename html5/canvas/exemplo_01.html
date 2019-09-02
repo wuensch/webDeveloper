@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas</title>
+
+<style>
+    canvas{
+        border: 1px solid black;
+    }
+</style>
+
+<script>
+    
+    /*Desenha uma linha*/
+    function drawLine(){
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.moveTo(0, 0);
+      ctx.lineTo(200, 100);
+      ctx.stroke();
+    }
+
+</script>
+
+</head>
+<body>
+
+    <canvas id="myCanvas" width="200" height="100">
+    </canvas>
+    <button id="btnDrawLine" onclick="drawLine();">DRAW A LINE</button>
+    
+</body>
+</html>
